@@ -1,4 +1,3 @@
-
 import socket, threading, thread, select, signal, sys, time, getopt
 
 # Python Proxy
@@ -173,9 +172,6 @@ class ConnectionHandler(threading.Thread):
                 port = 443
             else:
                 port = 80
-                port = 8080
-                port = 8799
-                port = 3128
 
         (soc_family, soc_type, proto, _, address) = socket.getaddrinfo(host, port)[0]
 
